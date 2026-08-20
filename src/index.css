@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* sampled directly from the real Vardhman Pharma logo */
+  --blue: #487F9E;
+  --blue-ink: #2C4E62;
+  --blue-tint: #E9EFF2;
+  --gold: #C2A870;
+  --gold-ink: #7A6438;
+  --gold-tint: #F4EEE1;
+  --cyan: #2AAADB;
+  --deep: #1E3A4C;
+  --deep-raised: #26445A;
+
+  --ink: #20262B;
+  --ink-soft: #5B6570;
+  --paper: #F5F6F4;
+  --paper-raised: #FFFFFF;
+  --line: #E0E2DD;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 160ms;
+  --dur-med: 260ms;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.01em;
+}
+
+a { color: inherit; }
+button { font: inherit; cursor: pointer; }
+
+img, svg { display: block; max-width: 100%; }
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+@media (max-width: 640px) {
+  .wrap { padding: 0 20px; }
+}
+
+/* ---------- Scroll-reveal utilities (transform + opacity only) ---------- */
+.reveal {
+  opacity: 0;
+  transition: opacity 560ms var(--ease-out), transform 560ms var(--ease-out);
+  will-change: transform, opacity;
+}
+.reveal-up { transform: translateY(22px); }
+.reveal-left { transform: translateX(-24px); }
+.reveal-right { transform: translateX(24px); }
+.reveal.visible { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-up, .reveal-left, .reveal-right {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.placeholder-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--gold-ink);
+  background: var(--gold-tint);
+  padding: 2px 7px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
