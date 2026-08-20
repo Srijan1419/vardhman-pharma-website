@@ -171,6 +171,7 @@ header.scrolled {
 
 @media (max-width: 900px) {
   .hero-inner { flex-direction: column; align-items: flex-start; }
+  .hero-copy { max-width: 100%; width: 100%; }
   .hero-visual { width: 70%; margin: 0 auto; align-self: center; }
 }
 @media (max-width: 520px) {
@@ -530,13 +531,14 @@ section { padding: 84px 0; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 26px;
-  height: 26px;
-  border-radius: 6px;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
   background: transparent;
   border: 1px solid var(--line);
   color: var(--ink-soft);
   flex-shrink: 0;
+  -webkit-tap-highlight-color: transparent;
   transition: border-color var(--dur-fast) ease, color var(--dur-fast) ease, background var(--dur-fast) ease;
 }
 .copy-btn:hover { border-color: var(--blue); color: var(--blue-ink); }

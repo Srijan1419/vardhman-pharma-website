@@ -24,7 +24,7 @@ export default function CopyButton({ value, label }) {
       aria-label={copied ? "Copied" : `Copy ${label}`}
       title={copied ? "Copied" : `Copy ${label}`}
     >
-      <Icon name={copied ? "check" : "copy"} size={14} />
+      <Icon name={copied ? "check" : "copy"} size={15} />
     </button>
   );
 }

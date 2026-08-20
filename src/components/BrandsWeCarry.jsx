@@ -25,7 +25,7 @@ function initials(name) {
 function Mark({ name, index, size }) {
   const logo = logosBySlug[slugify(name)];
   if (logo) {
-    return <img className={`brand-logo ${size ? "brand-logo-lg" : ""}`} src={logo} alt={`${name} logo`} loading="lazy" />;
+    return <img className={`brand-logo ${size ? "brand-logo-lg" : ""}`} src={logo} alt={`${name} logo`} />;
   }
   return (
     <span className={`brand-mark ${ACCENTS[index % ACCENTS.length]} ${size ? "brand-mark-lg" : ""}`}>
