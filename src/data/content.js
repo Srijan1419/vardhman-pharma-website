@@ -7,7 +7,7 @@ export const business = {
   legalName: "Vardhman Pharma",
   tagline: "Bcoz Every Dose Matters...",
   strapline: "Deals in fast moving ethical items",
-  proprietor: { value: "Dhairya Bharilya", isSample: true },
+  proprietor: { value: "Dhairya Bharilya", isSample: false },
   establishedYear: "2025",
   establishedMonth: "February",
   city: "Jabalpur, Madhya Pradesh",
@@ -62,7 +62,6 @@ export const stockCategories = [
 export const credentials = [
   { label: "Drug Licence No. (20B / 21B)", value: "20B-21B/6458-6459/47/2024", isSample: false },
   { label: "GSTIN", value: "23FYZPB2347K1Z0", isSample: false },
-  { label: "PAN", value: "Pending confirmation", isSample: true },
   { label: "Registered address", value: "Office No. 30, 1st Floor, Medicine Complex (Rupali Complex), Napier Town, Jabalpur", isSample: false },
 ];
 
@@ -70,7 +69,6 @@ export const contact = {
   phone: { value: "0761-4031305", isSample: false },
   whatsapp: { value: "+91 79991 14860", isSample: false },
   email: { value: "vardhman.pharmajbp@gmail.com", isSample: false },
-  hours: { value: "Mon–Sat, 9:30 AM – 8:00 PM", isSample: true },
   addressLine: { value: "Office No. 30, 1st Floor, Medicine Complex (Rupali Complex), Napier Town", isSample: false },
   city: "Jabalpur, Madhya Pradesh",
   pin: { value: "482002", isSample: false },

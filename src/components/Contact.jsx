@@ -38,7 +38,6 @@ export default function Contact() {
             <Line label="Phone" field={contact.phone} href={`tel:${digits(contact.phone.value)}`} icon="phone" />
             <Line label="WhatsApp" field={contact.whatsapp} href={`https://wa.me/${digits(contact.whatsapp.value).replace("+", "")}`} icon="whatsapp" />
             <Line label="Email" field={contact.email} href={`mailto:${contact.email.value}`} icon="mail" />
-            <Line label="Hours" field={contact.hours} />
           </Reveal>
           <Reveal direction="right" delay={100} className="contact-card">
             <h3>Godown / office address</h3>

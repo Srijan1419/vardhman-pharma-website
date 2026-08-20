@@ -22,12 +22,7 @@ export default function Hero() {
           </Reveal>
           <Reveal className="hero-actions" delay={240}>
             <a href="#contact" className="btn btn-primary">Get in touch</a>
-            <a href="#credentials" className="btn btn-ghost">View licences &amp; credentials</a>
-          </Reveal>
-          <Reveal className="trust-chips" delay={300}>
-            <span className="chip">Wholesale Drug Licence · 20B / 21B</span>
-            <span className="chip">GSTIN Registered</span>
-            <span className="chip">Est. 2025</span>
+            <a href="#credentials" className="hero-link">View licences &amp; credentials →</a>
           </Reveal>
         </div>
 
